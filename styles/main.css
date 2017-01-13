@@ -1,0 +1,145 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+header {
+  background: #00FFFF; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, #00AAFF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, #00AAFF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, #00AAFF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, #00AAFF); /* Standard syntax */
+  overflow: hidden;
+}
+
+h1 {
+  font-family: Helvetica;
+}
+
+nav ul {
+  float: right;
+  position: absolute;
+  top: 4px;
+  right: 5px;
+
+}
+
+ul {
+  list-style: none;
+  float: right;
+  padding-left: 10px;
+}
+
+nav li {
+  float: left;
+  padding: 10px;
+  background-color: #efefef;
+  margin: 10px;
+}
+
+nav li:hover {
+  background: #f3db97;
+  cursor: pointer;
+}
+
+.company-name {
+  font-family: Impact;
+  margin-left:500px;
+}
+
+a {
+  color: black;
+}
+
+.octodex {
+  overflow: hidden;
+  /*background: red;*/
+  position: absolute;
+}
+
+li.octocat {
+  float:left;
+  width: 250px;
+  overflow: hidden;
+  margin-left: 15px;
+  position: relative;
+  }
+
+a img {
+  width:100%;
+  border: 1px solid #eee;
+  radius: 5px;
+}
+
+footer {
+  position: relative;
+}
+
+footer::after {
+  background: #cacaca;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  outline: none;
+  width: 300px;
+}
+
+footer cite {
+  float: right;
+  font-size: .7em;
+  font-family: Helvetica;
+  color: #919191;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.triangle-down {
+  float: right;
+  content: "";
+  border: 8px solid transparent;
+  border-top-color: #cacaca;
+  position:relative;
+  right: 18px;
+  width: 5px;
+  bottom: 5px;
+}
+
+.triangle-down:hover {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  border-top-color: green;
+}
+
+h3 {
+  font-size: 15px;
+  color: #bbb;
+}
+
+.octonumber {
+  float:left;
+  margin: 9px;
+}
+
+.octonumber::before {
+  content: '#'
+}
+
+cite a {
+  text-decoration: none;
+}
+
+.authors img:hover{
+  transition: all .2s ease-in-out;
+  transform: scale(1.7);
+  filter: grayscale(0);
+}
+
+.authors img {
+  width: 20px;
+  filter: grayscale(100%);
+}
